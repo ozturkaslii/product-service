@@ -75,5 +75,19 @@ namespace ProductCatalog.API.Controllers
             var response = await _mediator.Send(new ProductUpdateServiceRequest(productId, model));
             return Ok(response);
         }
+
+        /// <summary>
+        /// Delete product item with product Id
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("{productId}")]
+        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Delete([FromRoute] int productId)
+        {
+            var response = await _mediator.Send(new ProductDeleteServiceRequest(productId));
+            return Ok(response);
+        }
     }
 }
