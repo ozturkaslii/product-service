@@ -15,6 +15,8 @@ namespace ProductCatalog.API.Utils
             CreateMap<ProductCreateRequestModel, Product>();
             CreateMap<Product, ProductCreateResponseModel>();
 
+            CreateMap<Product, ProductUpdateResponseModel>();
+
         }
     }
 }

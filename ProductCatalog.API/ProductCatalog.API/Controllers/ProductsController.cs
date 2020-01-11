@@ -60,5 +60,20 @@ namespace ProductCatalog.API.Controllers
             var response = await _mediator.Send(new ProductCreateServiceRequest(model));
             return Ok(response);
         }
+
+        /// <summary>
+        /// Update product model
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPut]
+        [Route("{productId}")]
+        [ProducesResponseType(typeof(ProductUpdateResponseModel), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Update([FromRoute] int productId, [FromBody] ProductUpdateRequestModel model)
+        {
+            var response = await _mediator.Send(new ProductUpdateServiceRequest(productId, model));
+            return Ok(response);
+        }
     }
 }
