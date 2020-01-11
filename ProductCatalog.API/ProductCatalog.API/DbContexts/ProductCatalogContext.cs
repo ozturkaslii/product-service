@@ -21,7 +21,7 @@ namespace ProductCatalog.API.DbContexts
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = 1,
                     Code = "C1476",
                     Name = "Havana Light Grey Jacket",
                     Price = 399.0m,
@@ -29,7 +29,7 @@ namespace ProductCatalog.API.DbContexts
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = 2,
                     Code = "P5752",
                     Name = "Lezio Mid Blue Check Suit",
                     Price = 359.0m,
@@ -37,7 +37,7 @@ namespace ProductCatalog.API.DbContexts
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = 3,
                     Code = "J461LB",
                     Name = "Navy Overcoat",
                     Price = 499.0m,
@@ -45,7 +45,7 @@ namespace ProductCatalog.API.DbContexts
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = 4,
                     Code = "H6049",
                     Name = "Light Blue Stripe Shirt",
                     Price = 99.0m,

@@ -24,6 +24,7 @@ namespace ProductCatalog.API
                 try
                 {
                     var context = scope.ServiceProvider.GetService<ProductCatalogContext>();
+                    //context.Database.EnsureDeleted(); //For demo purpose
                     context.Database.Migrate();
                 }
                 catch (Exception ex)

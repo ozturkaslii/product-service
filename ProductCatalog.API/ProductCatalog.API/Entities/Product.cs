@@ -10,7 +10,7 @@ namespace ProductCatalog.API.Entities
     public class Product
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(10)]
