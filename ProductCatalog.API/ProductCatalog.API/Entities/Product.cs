@@ -23,6 +23,7 @@ namespace ProductCatalog.API.Entities
         public string Photo { get; set; }
 
         [Required]
+        [MinLength(0)]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 

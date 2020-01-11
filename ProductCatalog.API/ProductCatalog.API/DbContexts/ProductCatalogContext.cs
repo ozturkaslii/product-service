@@ -52,6 +52,9 @@ namespace ProductCatalog.API.DbContexts
                     LastUpdated = DateTimeOffset.Now
                 });
 
+            //Set product code as unique
+            modelBuilder.Entity<Product>().HasIndex(p => p.Code).IsUnique();
+
             base.OnModelCreating(modelBuilder);
         }
     }
