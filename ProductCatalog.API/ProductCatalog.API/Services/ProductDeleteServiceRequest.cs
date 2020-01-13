@@ -1,7 +1,7 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using ProductCatalog.API.Datas;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Services
 {

@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProductCatalog.API.DbContexts;
 using ProductCatalog.API.Entities;
-using ProductCatalog.API.Models.Responses;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Datas
 {

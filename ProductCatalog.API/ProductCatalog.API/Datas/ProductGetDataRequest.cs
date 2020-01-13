@@ -1,9 +1,8 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using ProductCatalog.API.DbContexts;
 using ProductCatalog.API.Entities;
-using ProductCatalog.API.Models.Responses;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Datas
 {

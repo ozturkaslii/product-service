@@ -1,10 +1,10 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using MediatR;
 using ProductCatalog.API.Datas;
 using ProductCatalog.API.Entities;
 using ProductCatalog.API.Models.Responses;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Services
 {

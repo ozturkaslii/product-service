@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using ProductCatalog.API;
 using ProductCatalog.API.Entities;
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace ProductCatalog.Test
@@ -70,7 +68,7 @@ namespace ProductCatalog.Test
         public async Task Test_Put_ProductItem()
         {
             //arrange
-            var request = "api/Products/6";
+            var request = "api/Products/1";
 
             //act
             var response = await _client.PutAsync(request, new StringContent(
